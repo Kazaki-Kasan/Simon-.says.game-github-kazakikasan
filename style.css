@@ -25,3 +25,128 @@ body {
   opacity: 1;
   box-shadow: 0 0 20px white;
 }
+
+
+@meta (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: white;
+  }
+  .btn {
+    opacity: 0.8;
+  }
+}
+
+@meta (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: black;
+  }
+  .btn {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 100px);
+    gap: 5px;
+    margin-top: 20px;
+  }
+  .btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(2, 80px);
+    gap: 3px;
+    margin-top: 10px;
+  }
+  .btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    grid-template-columns: repeat(2, 60px);
+    gap: 2px;
+    margin-top: 5px;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: 200px) {
+  .container {
+    grid-template-columns: repeat(2, 50px);
+    gap: 1px;
+    margin-top: 2px;
+  }
+  .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 100px) {
+  .container {
+    grid-template-columns: repeat(2, 40px);
+    gap: 1px;
+    margin-top: 1px;
+  }
+  .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 1px;
+  }
+}
+
+@media (max-width: 50px) {
+  .container {
+    grid-template-columns: repeat(2, 30px);
+    gap: 1px;
+    margin-top: 0;
+  }
+  .btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 30px) {
+  .container {
+    grid-template-columns: repeat(2, 20px);
+    gap: 1px;
+    margin-top: 0;
+  }
+  .btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 20px) {
+  .container {
+    grid-template-columns: repeat(2, 10px);
+    gap: 1px;
+    margin-top: 0;
+  }
+  .btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+  }
+}
